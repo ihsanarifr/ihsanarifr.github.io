@@ -8,8 +8,6 @@ layout: default
   {% endif %}
 </header>
 
-{% include menu_item.html collection=site.data.menu.entries %}
-
 {%- if strapi.collections.posts.size > 0 -%}
 <ul>
     {%- for post in strapi.collections.posts -%}
