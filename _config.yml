@@ -51,22 +51,22 @@ favicon: "logo.png" # name+extension of favicon (which must be put on the root f
 sass:
   style: :compressed
 
-# strapi:
-#   # Your API endpoint (optional, default to http://localhost:1337)
-#   endpoint: http://strapi:1337
-#   collections:
-#     # Example for a "posts" collection
-#     posts:
-#       # Collection name (optional)
-#       type: posts
-#       # Permalink used to generate the output files (eg. /posts/:id).
-#       permalink: /posts/:slug/
-#       # Layout file for this collection
-#       layout: post2.html
-#       # Generate output files or not (default: false)
-#       output: true
-#     authors:
-#       type: users
-#       permalink: /authors/:username
-#       layout: author.html
-#       output: true
+strapi:
+  # Your API endpoint (optional, default to http://localhost:1337)
+  endpoint: https://strapi-master.herokuapp.com
+  collections:
+    # Example for a "posts" collection
+    posts:
+      # Collection name (optional)
+      type: posts
+      # Permalink used to generate the output files (eg. /posts/:id).
+      permalink: /posts/:slug/
+      # Layout file for this collection
+      layout: post2.html
+      # Generate output files or not (default: false)
+      output: true
+    authors:
+      type: users
+      permalink: /authors/:username
+      layout: author.html
+      output: true
